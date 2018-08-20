@@ -18,7 +18,9 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(OpenCV REQUIRED)
 
 find_package(Ceres REQUIRED)
-include_directories(${CERES_INCLUDE_DIRS})
+include_directories(
+${catkin_INCLUDE_DIRS}
+${CERES_INCLUDE_DIRS})
 include_directories(${catkin_INCLUDE_DIRS})
 
 #find_package(Eigen3 REQUIRED)
